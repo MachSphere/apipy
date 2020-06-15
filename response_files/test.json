@@ -1,10 +1,5 @@
 {
-  "type": "ProductSaleRequest",
-  "subtype": "None",
-  "actionGuid": "943E6FCB-6887-4643-9C6E-93E793CD74F8",
-  "actionSeqNo": "1",
-  "serviceProviderId": "99",
-  "passengerCode": "2",
-  "passengerCodeExpiry": "5985",
-  "isAutoLoad": true
+  "type" : "test",
+  "quality" : "excellent",
+  "fun-factor" : "AWESOME!"
 }
