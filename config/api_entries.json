@@ -1,0 +1,9 @@
+
+    [
+        {
+            "uri": "/api/test",
+            "status_code": 200,
+            "response_file": "test.json",
+            "operation": "GET"
+        }
+    ]
