@@ -25,7 +25,8 @@ def time_elapsed():
     global json_data
     elapsed_time = time.time() - time_obj
 
-    if elapsed_time >= 60:
+    #check if we need to update our api rules again
+    if elapsed_time >= 120:
         json_data = []
 
         define_api_rules()
@@ -46,6 +47,7 @@ def get_response_data(request_uri, request_method):
             if operation == request_method and response_file:
                 return {'response': Configuration.open_response_file(response_file), 'status_code': item['status_code']}
 
+    #If the system cannot find the URI or operation associated to URL it returns 404
     return {'response': 'NA', 'status_code': 404}
 
 
